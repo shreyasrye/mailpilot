@@ -1,4 +1,4 @@
-# UMass CS 485 Final Project: Email-GPT
+PostMaster
 
 ## Getting Started
 
