@@ -94,7 +94,6 @@ def init():
       result.append({"id": data["id"][i], "From": data["From"][i], "Subject": data["Subject"][i], "body": (tokens.textFileProcess(body[i], "nofancy", "yesStop", "porterStem", tokens.stopword_lst))})
   result = pd.DataFrame(result)
   result['body'] = result['body'].apply(lambda tokens: ' '.join(tokens))
-  result.to_csv("emails.csv", index=False)
   return result
 
 

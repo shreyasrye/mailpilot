@@ -82,22 +82,22 @@ def generate_embeddings(text_chunks):
     return embeddings
 
 
+def main():
+    emails = fetch_emails.init()
+    email_chunks = split_text(emails, 3000)
+    embeddings = generate_embeddings(email_chunks)
 
-emails = fetch_emails.init()
-email_chunks = split_text(emails, 3000)
-embeddings = generate_embeddings(email_chunks)
+    metadata = []
+    for chunk in email_chunks:
+        for email in chunk['emails']:
+            metadata.append({
+                "id": email['id'],
+                "from": email['from'],
+                "subject": email['subject']
+            })
 
-metadata = []
-for chunk in email_chunks:
-    for email in chunk['emails']:
-        metadata.append({
-            "id": email['id'],
-            "from": email['from'],
-            "subject": email['subject']
-        })
+    ids = [f"email-{i}" for i in range(len(metadata))]
 
-ids = [f"email-{i}" for i in range(len(metadata))]
+    pinecone_vectors = list(zip(ids, embeddings, metadata))
 
-pinecone_vectors = list(zip(ids, embeddings, metadata))
-
-index.upsert(vectors=pinecone_vectors)
+    index.upsert(vectors=pinecone_vectors)
