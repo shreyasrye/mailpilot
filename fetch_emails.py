@@ -95,7 +95,3 @@ def init():
   result = pd.DataFrame(result)
   result['body'] = result['body'].apply(lambda tokens: ' '.join(tokens))
   return result
-
-
-if __name__ == "__main__":
-  init()
