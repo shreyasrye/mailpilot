@@ -1,0 +1,14 @@
+## Instructions ##
+
+Emails contains a list of emails extracted for a user. Based on the content of the email including the subject etc. assign one or more labels to each email. 
+First see if the email content closely matches any of the provided labels and assign them. 
+If the provided labels do not match the email content, then assign your own labels to the email.
+Do not assign more than 6 labels to any email. 
+
+Respond with a JSON-compliant list of dictionaries in the following format:
+[
+    {
+         "{label_1}" : ["email_id_1","email_id_2", etc.],
+         "{label_2}" : ["email_id_3","email_id_4", etc.]
+    }
+] 
