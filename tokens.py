@@ -27,90 +27,6 @@ def checkShort(word):
         check = True
     return check
 
-def porterStemmerA(words: list[list[str]]):
-    for section in words:
-        i = section
-        if not section == []:
-            for word in section:
-                j = word
-                if word.endswith("sses"):
-                    word = word[:-4] + "ss"     #SS stemming
-                    section[section.index(j)] = word
-                    continue
-                if len(word) > 4 and word.endswith("ied"):
-                    word = word[:-3] + "i"     #ied stemming
-                    section[section.index(j)] = word
-                    continue
-                elif len(word) > 4 and word.endswith("ies"):
-                    word = word[:-3] + "i"    
-                    section[section.index(j)] = word
-                    continue
-                elif len(word) <= 4 and word.endswith("ied"):
-                    word = word[:-3] + "ie"  
-                    section[section.index(j)] = word 
-                    continue
-                elif len(word) <= 4 and word.endswith("ies"):
-                    word = word[:-3] + "ie"   
-                    section[section.index(j)] = word
-                    continue
-                if word.endswith("ss") or word.endswith("us"):
-                    section[section.index(j)] = word
-                    continue
-                if word.endswith("s") and (checkVowels(word[:-2])):
-                    word = word[:-1]
-                section[section.index(j)] = word
-        words[words.index(i)] = section
-    return words
-
-def porterStemmerB(words: list[list[str]]):
-    for section in words:
-        i = section
-        if not section == []:
-            for word in section:
-                j = word
-                if j == "":
-                    section.remove(j)
-                    continue
-                if word.endswith("eed"):
-                    tracker = word[:-3]
-                    if checkVowels(tracker[:-1]) and not checkVowels(tracker[len(tracker) - 1]):
-                        word = word[:-3] + "ee"
-                elif word.endswith("eedly"):
-                    tracker = word[:-5]
-                    if (checkVowels(tracker[:-1]) and not checkVowels(tracker[len(tracker) - 1])):
-                        word = word[:-5] + "ee"
-                if word.endswith("ed") or word.endswith("edly") or word.endswith("ing") or word.endswith("ingly"):
-                    if word.endswith("ed") and checkVowels(word[:-2]):
-                            word = word[:-2]
-                    elif word.endswith("edly") and checkVowels(word[:-4]):
-                            word = word[:-4]
-                    elif word.endswith("ing") and checkVowels(word[:-3]):
-                            word = word[:-3]
-                    elif word.endswith("ingly") and checkVowels(word[:-5]):
-                            word = word[:-5]
-                    if word.endswith("at") or word.endswith("bl") or word.endswith("iz"):
-                            word = word + "e"
-                    elif word.endswith("bb") or word.endswith("dd") or word.endswith("ff") or word.endswith("gg") or word.endswith("mm") or word.endswith("nn") or word.endswith("pp") or word.endswith("rr") or word.endswith("tt"):
-                        word = word[:-1]
-                    elif checkShort(word):
-                        word = word + "e"
-                section[section.index(j)] = word
-        words[words.index(i)] = section
-    return words
-
-def porterStemmerC(words: list[list[str]]):
-    for section in words:
-        i = section
-        if not section == []:
-            for word in section:
-                j = word
-                if len(word) > 2 and word.endswith("y") and not checkVowels(word[len(word) - 2]):
-                    word = word[:-1] + "i"
-                section[section.index(j)] = word
-        words[words.index(i)] = section
-
-    return words   
-
 def tokenizer(data):
     parser = MyHTMLParser()
     parser.feed(data)
@@ -148,7 +64,7 @@ def tokenizer(data):
                 final_ind[final_ind.index(i)].remove(j)
     return final_ind
 
-def textFileProcess(inputZipFile, tokenType, stopList, stemming, stopword_lst):
+def textFileProcess(inputZipFile, tokenType, stopList, stopword_lst):
     information = ""
     soup = BeautifulSoup(inputZipFile, 'html.parser')
     for header in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
@@ -172,10 +88,6 @@ def textFileProcess(inputZipFile, tokenType, stopList, stemming, stopword_lst):
             for i in word:
                 if i in stopword_lst:
                     word.remove(i)
-    if stemming == "porterStem":
-        words = porterStemmerA(words)
-        words = porterStemmerB(words)
-        words = porterStemmerC(words)
     for word in words:
         for i in word:
             if i == '' or i == "":
@@ -199,13 +111,12 @@ if __name__ == '__main__':
     """
     tokenize_type = sys.argv[2] if argv_len >= 4 else "fancy"
     stoplist_type = sys.argv[3] if argv_len >= 5 else "yesStop"
-    stemming_type = sys.argv[4] if argv_len >= 6 else "porterStem"
 
     stopword_lst = ["a", "an", "and", "are", "as", "at", "be", "by", "for", "from",
                         "has", "he", "in", "is", "it", "its", "of", "on", "that", "the", "to",
                         "was", "were", "with", "\n", "\r"]
 
-    textFileProcess(inputing, tokenize_type, stoplist_type, stemming_type, stopword_lst)
+    textFileProcess(inputing, tokenize_type, stoplist_type, stopword_lst)
 
 stopword_lst = ["a", "an", "and", "are", "as", "at", "be", "by", "for", "from",
                     "has", "he", "in", "is", "it", "its", "of", "on", "that", "the", "to",

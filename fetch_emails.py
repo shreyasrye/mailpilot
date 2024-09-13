@@ -144,7 +144,7 @@ def init():
         return pd.DataFrame(result)
     body = data["body"]
     for i in range(len(body)):
-        processed_body = "" if pd.isna(body[i]) else ' '.join(tokens.textFileProcess(body[i], "nofancy", "yesStop", "porterStem", tokens.stopword_lst))
+        processed_body = "" if pd.isna(body[i]) else ' '.join(tokens.textFileProcess(body[i], "nofancy", "yesStop", tokens.stopword_lst))
         result.append({"id": data["id"][i], "From": data["From"][i], "Subject": data["Subject"][i], "body": processed_body})
     result = pd.DataFrame(result)
     result.to_csv("processed_emails.csv", index=False)
