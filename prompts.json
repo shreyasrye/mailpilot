@@ -1,5 +1,0 @@
-{
-    "max_num_labels":6,
-    "desired_labels":"Action Required",
-    "classification_prompt": "Given these emails, semantically label each email with a category. You decide the categories (If desired labels were provided, include those as labels. Also, to keep things semi-high level, limit the number of labels to the maximum mentioned, and if desired labels were provided, create more that go up to the maximum limit if they aren't as many). Provide the output as a dictionary with 'key':'value' pairs with double quotations around both. The key should be the email id, and the value would be its associated label. Here's an example: {'18908dff0dc90b55': 'Promotional', ... '189030f459fba4d7': 'Coding Challenge'} (however, instead of single quotes, use double quotes). Don't include anything other than the dictionary in the output- no titles, descriptions, headers or anything. There should be no text outside the {} braces, no '```json'."
-}   
