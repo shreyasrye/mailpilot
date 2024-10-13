@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pinecone-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+scikit-learn
+pandas
+PyPDF2
+openai
+beautifulsoup4
+requests
+numpy

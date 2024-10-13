@@ -1,0 +1,66 @@
+2024-10-11 20:50:18,051 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-11 20:50:18,053 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-11 20:50:18,097 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-11 20:50:18,100 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-11 20:50:18,155 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-11 20:50:18,411 - pinecone.core.openapi.shared.rest - DEBUG - response body: b'{"name":"postmaster","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"postmaster-qoza0df.svc.apw5-4e34-81fa.pinecone.io","spec":{"serverless":{"region":"us-west-2","cloud":"aws"}},"deletion_protection":"disabled"}'
+2024-10-11 20:50:18,428 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-11 20:50:18,431 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-11 20:50:18,475 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-11 20:50:18,476 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-11 20:50:18,476 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-12 00:02:56,470 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-12 00:02:56,472 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-12 00:02:56,511 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-12 00:02:56,513 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-12 00:02:56,542 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-12 00:02:56,784 - pinecone.core.openapi.shared.rest - DEBUG - response body: b'{"name":"postmaster","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"postmaster-qoza0df.svc.apw5-4e34-81fa.pinecone.io","spec":{"serverless":{"region":"us-west-2","cloud":"aws"}},"deletion_protection":"disabled"}'
+2024-10-12 00:02:56,798 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-12 00:02:56,800 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-12 00:02:56,853 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-12 00:02:56,854 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-12 00:02:56,855 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-13 00:27:56,403 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-13 00:27:56,404 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-13 00:27:56,453 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-13 00:27:56,456 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-13 00:27:56,494 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-13 00:27:56,763 - pinecone.core.openapi.shared.rest - DEBUG - response body: b'{"name":"postmaster","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"postmaster-qoza0df.svc.apw5-4e34-81fa.pinecone.io","spec":{"serverless":{"region":"us-west-2","cloud":"aws"}},"deletion_protection":"disabled"}'
+2024-10-13 00:27:56,772 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-13 00:27:56,773 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-13 00:27:56,816 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-13 00:27:56,816 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-13 00:27:56,817 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-13 00:45:21,570 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-13 00:45:21,572 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-13 00:45:21,623 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-13 00:45:21,624 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-13 00:45:21,639 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-13 00:45:21,880 - pinecone.core.openapi.shared.rest - DEBUG - response body: b'{"name":"postmaster","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"postmaster-qoza0df.svc.apw5-4e34-81fa.pinecone.io","spec":{"serverless":{"region":"us-west-2","cloud":"aws"}},"deletion_protection":"disabled"}'
+2024-10-13 00:45:21,894 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-13 00:45:21,896 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-13 00:45:21,943 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-13 00:45:21,945 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-13 00:45:21,945 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-13 00:59:11,065 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-13 00:59:11,068 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-13 00:59:11,122 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-13 00:59:11,125 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-13 00:59:11,168 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-13 00:59:11,417 - pinecone.core.openapi.shared.rest - DEBUG - response body: b'{"name":"postmaster","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"postmaster-qoza0df.svc.apw5-4e34-81fa.pinecone.io","spec":{"serverless":{"region":"us-west-2","cloud":"aws"}},"deletion_protection":"disabled"}'
+2024-10-13 00:59:11,427 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-13 00:59:11,428 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-13 00:59:11,476 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-13 00:59:11,478 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-13 00:59:11,479 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-13 01:52:33,409 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-13 01:52:33,427 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-13 01:52:33,505 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-13 01:52:33,510 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-13 01:52:33,615 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2024-10-13 01:52:34,066 - pinecone.core.openapi.shared.rest - DEBUG - response body: b'{"name":"postmaster","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"postmaster-qoza0df.svc.apw5-4e34-81fa.pinecone.io","spec":{"serverless":{"region":"us-west-2","cloud":"aws"}},"deletion_protection":"disabled"}'
+2024-10-13 01:52:34,088 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-13 01:52:34,091 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-10-13 01:52:34,174 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/usr/local/lib/python3.10/site-packages/pinecone_plugins'])
+2024-10-13 01:52:34,176 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2024-10-13 01:52:34,177 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
