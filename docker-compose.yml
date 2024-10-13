@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "19006:19006" 
+    volumes:
+      - ./frontend/MailPilotApp:/app/MailPilotApp
+    environment:
+      - NODE_ENV=developmentn
+      - EXPO_PACKAGER_PORT=19006
+      - EXPO_WEB_PORT=19006 
+    stdin_open: true
+    tty: true
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - PINECONE_API_KEY=<> # Pinecone API key
+      - OPENAI_API_KEY=<> # OpenAI API key
+      - GOOGLE_APPLICATION_CREDENTIALS=/backend/app/client_secret.json
+    stdin_open: true
+    tty: true
+    depends_on:
+      - frontend
